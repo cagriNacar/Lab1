@@ -1,0 +1,94 @@
+Console.Write("What is your name? ");
+string name = Console.ReadLine();
+
+Console.Write("Which city are you from? ");
+string city = (Console.ReadLine());
+
+Console.WriteLine("Name:\t"+ name);
+Console.WriteLine("City:\t" + city);
+Console.WriteLine("Department: Computer Engineering");
+Console.WriteLine("Year:\t 2");
+Console.WriteLine("C#\t is fun");
+Console.WriteLine($"Hello {name} from {city},Welcome to C#");
+
+
+
+
+
+Console.Write("Enter first number: ");
+double num1 = double.Parse(Console.ReadLine());
+
+Console.Write("Enter second number: ");
+double num2 = double.Parse(Console.ReadLine());
+
+Console.WriteLine(num1 + num2);
+Console.WriteLine(num1 - num2);
+Console.WriteLine(num1 * num2);
+Console.WriteLine(num1 / num2);
+
+// 7 / 2 is integer divide. Result is 3.At least one has to be double.
+
+
+
+
+
+
+
+Console.Write("Enter student name: ");
+string name = Console.ReadLine();
+
+
+Console.Write("Enter your midterm grade: ");
+double mt = double.Parse(Console.ReadLine());
+
+
+Console.Write("Enter your final grade: ");
+double fn = double.Parse(Console.ReadLine());
+
+double ave = (mt *0.4) + (fn*0.6);
+
+Console.WriteLine($"{name} your average is {ave:F2} ");
+
+
+if(ave >= 50)
+{
+    Console.WriteLine("Passed");
+}
+else
+{
+    Console.WriteLine("Failed");
+}
+
+
+
+
+
+
+Console.Write("Enter 3-digit number: ");
+int num = int.Parse(Console.ReadLine());
+
+int fd = num / 100;
+int md = (num / 10 )% 10;
+int ld = num % 10;
+
+int result = fd + md + ld;
+
+
+Console.WriteLine($"Hundreds: {fd}");
+Console.WriteLine($"Tens: {md}");
+Console.WriteLine($"Ones: {ld}");
+Console.WriteLine($"Sum of digits: {result}");
+
+if(num % 2 == 0) 
+   { Console.WriteLine("Number is Even"); }
+else
+    { Console.WriteLine("Number is Odd"); }
+
+if(fd != ld)
+{
+    Console.WriteLine("First and last digits are different");
+}
+else
+{
+    Console.WriteLine("First and last digits are same");
+}
